@@ -8,11 +8,7 @@ env:
   - TOX_ENV=flake8
 
 install:
-  - pip install -e .[test]
-  - pip install tox
-  - pip install pytest
-  - pip install coveralls
-  - pip install flex
+  - pip install -e .[tests]
 
 script:
   - tox -e $TOX_ENV
